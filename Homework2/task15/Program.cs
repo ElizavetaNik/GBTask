@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using static System.Console;
+Clear();
+Write ("Введите цифру, обозначающую день недели:");
+int a = int.Parse(ReadLine());
+
+
+Write(a<=5? "нет" : "да" );
+

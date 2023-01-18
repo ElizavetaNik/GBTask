@@ -5,10 +5,10 @@ Write ("Введите число a:");
 int numberA = int.Parse(ReadLine());
 Write ("Введите число b:");
 int numberB = int.Parse(ReadLine());
-ToDegree(numberA,numberB);
+AB(numberA,numberB);
 
 
-void ToDegree(int a, int b)
+void AB(int a, int b)
 {
     int result = 1;
     for (int i=1; i <= b; i++)

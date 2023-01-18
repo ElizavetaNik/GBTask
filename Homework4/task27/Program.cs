@@ -5,6 +5,7 @@ Write ("Введите число a:");
 int numberA = int.Parse(ReadLine());
 int b = Numberlen(numberA);
 SUM (numberA,b);
+
 int Numberlen(int a)
 {
     int index = 0;

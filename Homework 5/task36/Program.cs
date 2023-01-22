@@ -13,8 +13,8 @@ for (int i = 1; i < numbers.Length; i+= 2)
 {
    Sum  += numbers[i]; 
 }
-Write(Sum);
 
+Write(Sum);
 
 void ArrayRandom (int [] array)
 {
@@ -28,9 +28,10 @@ void ArrayRandom (int [] array)
 }
 void PrintArray(int [] array)
 {
-    for (int i=0; i < array.Length; i++)
+    Write("["); 
+    for (int i=0; i < array.Length-1; i++)
     {
-        Write(array[i] + " ");
+        Write($"{array[i]},");
     }
-    WriteLine(); 
+    Write($"{array[array.Length-1]}] "); 
 }

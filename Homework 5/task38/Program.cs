@@ -3,13 +3,13 @@ Clear();
 
 Write ("Введите размер массива:");
 int size = Convert.ToInt32(Console.ReadLine());
-int [] numbers = new int [size];
+double [] numbers = new double [size];
 
 ArrayRandom (numbers);
 PrintArray(numbers);
 
-int max = numbers[0];
-int min = numbers[0];
+double max = numbers[0];
+double min = numbers[0];
 for (int i = 0; i < numbers.Length; i++)
 {
    if (numbers[i] > max)
@@ -23,19 +23,19 @@ for (int i = 0; i < numbers.Length; i++)
 }
 
 
-WriteLine($"-> {max-min}");
+WriteLine($"-> {max-min:f2}");
 
-void ArrayRandom (int [] array)
+void ArrayRandom (double [] array)
 {
     
     for (int i=0; i < array.Length; i++)
     {
-        array[i] = new Random().Next (1,101);      
+        array[i] = Convert.ToDouble(new Random().Next(100,1000)) / 100;     
         
     }
    
 }
-void PrintArray(int [] array)
+void PrintArray(double [] array)
 {
     Write("["); 
     for (int i=0; i < array.Length-1; i++)

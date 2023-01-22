@@ -13,7 +13,7 @@ for (int i=0; i < numbers.Length; i++)
     if (numbers[i] % 2 == 0)
     count++;
 }
-WriteLine($"четных счисел -> {count}");
+WriteLine($"четных чисел -> {count}");
 
 
 void ArrayRandom (int [] array)
@@ -28,9 +28,10 @@ void ArrayRandom (int [] array)
 }
 void PrintArray(int [] array)
 {
-    for (int i=0; i < array.Length; i++)
+    Write("["); 
+    for (int i=0; i < array.Length-1; i++)
     {
-        Write(array[i] + " ");
+        Write($"{array[i]},");
     }
-    WriteLine(); 
+    Write($"{array[array.Length-1]}] "); 
 }
